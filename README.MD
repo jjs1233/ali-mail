@@ -46,3 +46,36 @@ func main() {
       fmt.Println("Send mail success!")
     }
 }
+
+#### GunConfig
+
+```go
+type GunConfig struct {
+	User     string  "控制台创建的发信地址",
+	Password string  "控制台设置的SMTP密码",
+	Host     string  "smtpdm.aliyun.com:25",
+}
+
+```
+
+
+#### Gun
+
+```go
+type GunConfig struct {
+	GunConfig 
+	Auth smtp.Auth
+}
+
+```
+
+### Cont
+```go
+type Cont struct {
+	Aims         string  "收件人 多个采用 ; 分开"
+	Subject      string  "邮件标题"
+	Body         string  "邮件正文"
+	Mailtype     string  "邮件类型 html"
+	Content_type string
+}
+```

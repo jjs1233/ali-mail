@@ -47,6 +47,9 @@ func main() {
     }
 }
 
+
+###数据类型
+
 #### GunConfig
 
 ```go

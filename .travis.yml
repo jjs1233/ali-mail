@@ -7,6 +7,7 @@ go:
     - 1.7
 
 install:
+    - go get github.com/stretchr/testify/require
     - go get github.com/jjs1233/aliMail
 
 script:

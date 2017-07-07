@@ -2,7 +2,7 @@
 
 [![Build Status](https://api.travis-ci.org/jjs1233/aliMail.svg?branch=master)](https://travis-ci.org/jjs1233/aliMail)
 
-    import "github.com/jjs1233/aliMail"
+    go get "github.com/jjs1233/aliMail"
 
 ## Usage
 

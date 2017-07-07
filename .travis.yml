@@ -10,4 +10,4 @@ install:
     - go get github.com/jjs1233/ali-mail
 
 script:
-    - cd ali-mail && go test -v
+    - cd aliMail && go test -v

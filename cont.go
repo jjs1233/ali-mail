@@ -1,10 +1,10 @@
 package aliMail
 
 type Cont struct {
-	Aims         string `收件人 多个采用 ; 分开`
-	Subject      string `邮件标题`
-	Body         string `邮件正文`
-	Mailtype     string `邮件类型 html`
+	Aims         string
+	Subject      string
+	Body         string
+	Mailtype     string
 	Content_type string
 }
 

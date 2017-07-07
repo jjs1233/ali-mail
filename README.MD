@@ -46,7 +46,7 @@ func main() {
       fmt.Println("Send mail success!")
     }
 }
-
+```
 
 ###数据类型
 

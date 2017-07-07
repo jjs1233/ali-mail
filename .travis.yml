@@ -7,7 +7,7 @@ go:
     - 1.7
 
 install:
-    - go get github.com/upyun/jjs1233/ali-mail
+    - go get github.com/jjs1233/ali-mail
 
 script:
-    - cd aliMail && go test -v
+    - cd ali-mail && go test -v

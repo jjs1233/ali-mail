@@ -1,4 +1,4 @@
-# golang 实现阿里云smtp邮件推送接口调用
+# golang 实现阿里大于smtp邮件推送接口调用
 
 [![Build Status](https://api.travis-ci.org/jjs1233/aliMail.svg?branch=master)](https://travis-ci.org/jjs1233/aliMail)
 
@@ -32,12 +32,15 @@ func main() {
           </body>
           </html>
         `
-    err := g.SendMail(&aliMail.Cont{
-      Aims:     "收件人 多个采用 ; 分开",
-      Subject:  "标题",
-      Body:     html,
-      Mailtype: "html",
-    })
+
+    c := aliMail.NewCont(
+      Aims      =  "收件人 多个采用 ; 分开",
+      Subject   =  "标题",
+      Mailtype  =  "html",
+      Body      =  html,
+    )
+    
+    err := g.SendMail(c)
 
     if err != nil {
       fmt.Println("Send mail error!")

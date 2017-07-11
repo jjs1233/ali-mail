@@ -8,10 +8,21 @@ type Cont struct {
 	Content_type string
 }
 
-func (c *Cont) init() {
-	if c.Mailtype == "html" {
-		c.Content_type = "Content-Type: text/" + c.Mailtype + "; charset=UTF-8"
+func NewCont(aims string, subject string, mailtype string, body string) Cont {
+
+	var content_type string
+
+	if mailtype == "html" {
+		content_type = "Content-Type: text/" + mailtype + "; charset=UTF-8"
 	} else {
-		c.Content_type = "Content-Type: text/plain" + "; charset=UTF-8"
+		content_type = "Content-Type: text/plain" + "; charset=UTF-8"
+	}
+
+	return Cont{
+		Aims:         aims,
+		Subject:      subject,
+		Body:         body,
+		Mailtype:     mailtype,
+		Content_type: content_type,
 	}
 }

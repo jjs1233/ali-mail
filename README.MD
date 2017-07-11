@@ -1,4 +1,4 @@
-# golang 实现阿里大于smtp邮件推送接口调用
+# golang 实现阿里云smtp邮件推送接口调用
 
 [![Build Status](https://api.travis-ci.org/jjs1233/aliMail.svg?branch=master)](https://travis-ci.org/jjs1233/aliMail)
 
